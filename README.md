@@ -21,7 +21,7 @@ Scenarios where HashWatcher can be useful:
 - Go compiler
 
 ## Quick usage guide 📚
-### Build:
+#### Build:
 ```
 go build -o hash-watcher cmd/main.go
 ```
@@ -32,7 +32,7 @@ go build -o hash-watcher cmd/main.go
 
 ---
 
-### Configuring targets:
+#### Configuring targets:
 Currently, you must create a JSON configuration file for each directory you wish to monitor. Put the file in a non-intrusive directory and name it as you wish. The JSON must follow the structure below:
 ```json
 {
@@ -53,7 +53,7 @@ You can also filter by specific file:
 
 ---
 
-### Usage example:
+#### Usage example:
 ```
 ./hash-watcher /full/path/to/directory/
 ```
