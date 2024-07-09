@@ -58,7 +58,7 @@ You can also filter by specific file:
 ./hash-watcher /full/path/to/configuration/file/settings.json
 ```
 
-The  `file-1.txt` was initially empty. Upon adding the letter 'X', the change was detected (after 30 seconds), and the hash comparison triggered a notification:
+The  `file-1.txt` was initially empty. Upon adding the letter 'X', the change was detected (after 60 seconds), and the hash comparison triggered a notification:
 
 ```
 2024/07/08 19:59:20 => Watching...
