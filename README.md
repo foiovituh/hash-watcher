@@ -97,7 +97,7 @@ Optionally, you can also send notifications to Slack channels using an app. Endp
 ./hash-watcher /full/path/to/configuration/file/settings.json
 ```
 
-The  `file-1.txt` was initially empty. Upon adding the letter 'X', the change was detected (after 30 seconds), and the hash comparison triggered a notification:
+The  `file-1.txt` was initially empty. Upon adding the letter 'X', the change was detected (after 60 seconds), and the hash comparison triggered a notification:
 
 ```
 2024/07/09 11:44:43 => Watching...
