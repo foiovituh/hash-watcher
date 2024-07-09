@@ -1,10 +1,30 @@
 # HashWatcher 🔍
+![GitHub License](https://img.shields.io/github/license/foiovituh/hash-watcher)
+
+![banner](https://github.com/foiovituh/hash-watcher/assets/68431603/466efc10-64cf-4ac7-84ca-02c9af63770b)
+
 Monitors, detects, and notifies changes in files (using SHA-256)
 
 Scenarios where HashWatcher can be useful:
 - Security Monitoring: Detect unauthorized changes to critical system or configuration files.
 - Configuration Management: Track changes in configuration files to ensure they are intentional and documented.
 - Software Development: Monitor source code or project files for unexpected modifications
+
+## Summary 📝
+- [HashWatcher 🔍](#hashwatcher-)
+  - [Summary 📝](#summary-)
+  - [How does it work? 💡](#how-does-it-work-)
+  - [Requirements 🔗](#requirements-)
+  - [Quick usage guide 📚](#quick-usage-guide-)
+      - [Build:](#build)
+      - [Configuring targets:](#configuring-targets)
+      - [Usage example:](#usage-example)
+  - [Future plans 📌](#future-plans-)
+  - [Do you want help me? 👥](#do-you-want-help-me-)
+  - [License 🏳️](#license-️)
+
+## How does it work? 💡
+SHA-256 is a hash function that works like a fingerprint for files. It converts any text into a 256-bit code. So if anything in the file changes, even a single character, the hash generated will be different. This is very useful (among other things) for checking whether a file has been modified by comparing the current hash with a previous one.
 
 ## Requirements 🔗
 <b>Supported OS</b>:
@@ -101,3 +121,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
