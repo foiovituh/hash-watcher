@@ -6,16 +6,20 @@ import (
 	"github.com/foiovituh/hash-watcher/internal/util"
 )
 
+type Notification struct {
+	Endpoint string `json:"endpoint"`
+	Token    string `json:"token"`
+}
+
+func (n *Notification) Configured() bool {
+	return n.Endpoint != "" && n.Token != ""
+}
+
 type WatcherSetting struct {
-	DirectoryPath           string   `json:"directoryPath"`
-	FileNames               []string `json:"fileNames"`
-	CheckFrequencyInSeconds int      `json:"checkFrequencyInSeconds"`
-	/*
-		TODO:
-		ExecutionTimeLimitInMinutes int    `json:"executionTimeLimitInMinutes"`
-		NotificationType            string `json:"notificationType"`
-		NotificationCredentials     ?      `json:"notificationCredentials`
-	*/
+	DirectoryPath           string       `json:"directoryPath"`
+	FileNames               []string     `json:"fileNames"`
+	CheckFrequencyInSeconds int          `json:"checkFrequencyInSeconds"`
+	Notification            Notification `json:"notification"`
 }
 
 func (ws *WatcherSetting) UnmarshalJson(filePath string) {

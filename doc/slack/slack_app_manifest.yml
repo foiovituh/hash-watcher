@@ -1,0 +1,21 @@
+display_information:
+  name: HashWatcher
+  description: Monitors, detects, and notifies changes in files (using SHA-256)
+  background_color: "#000000"
+  long_description: SHA-256 is a hash function that works like a fingerprint for files. It converts any text into a 256-bit code. So if anything in the file changes, even a single character, the hash generated will be different. This is very useful (among other things) for checking whether a file has been modified by comparing the current hash with a previous one.
+features:
+  bot_user:
+    display_name: HashWatcher
+    always_online: true
+oauth_config:
+  scopes:
+    bot:
+      - app_mentions:read
+      - chat:write
+settings:
+  interactivity:
+    is_enabled: true
+  org_deploy_enabled: false
+  socket_mode_enabled: true
+  token_rotation_enabled: false
+

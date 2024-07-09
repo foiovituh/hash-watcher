@@ -15,7 +15,7 @@ func Watch(ws *io.WatcherSetting) {
 	ticker := time.NewTicker(time.Second * tickerDuration)
 	defer ticker.Stop()
 
-	Logger.Print("=> Watching...\n\n")
+	Logger.Print("=> Watching...")
 
 	for range ticker.C {
 		fileDataMap := io.GetFileData(ws.DirectoryPath, ws.FileNames)
